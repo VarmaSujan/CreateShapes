@@ -15,10 +15,9 @@ public class Triangle {
         return l1.length() + l2.length() + l5.length();
     }
 
-    //Implements a method to calculate the area of a triangle(Heron's/Hero's Formula utilised)
+    //Implements a method to calculate the area of a right angle triangle only.
     public double area(){
-        double s = circumference()/2;
-        return Math.sqrt(s*(s-l1.length())*(s-l2.length())*(s-l5.length()));
+        return ((l1.length() * l2.length())/2);
     }
 
 }
